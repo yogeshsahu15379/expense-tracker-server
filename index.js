@@ -9,5 +9,5 @@ app.use("/",(req,res)=>{
 })
 
 app.listen(port,()=>{
-    console.log("server is listening at 5500");
+    console.log("server is listening at "+port);
 })
