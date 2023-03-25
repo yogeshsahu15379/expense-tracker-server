@@ -1,0 +1,25 @@
+{
+  "name": "server-deploy",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogeshsahu15379/expense-tracker-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yogeshsahu15379/expense-tracker-server/issues"
+  },
+  "homepage": "https://github.com/yogeshsahu15379/expense-tracker-server#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "g": "^2.0.1",
+    "n": "^9.0.1"
+  }
+}
