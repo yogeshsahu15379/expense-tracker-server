@@ -39,7 +39,18 @@ export const createUser = async (req,res)=>{
         res.status(500).json({massage:"user naot created"});
     }
     // console.log("req.params",req.body);
+}
 
+export const deleteUser = async(req,res) =>{
+    const {id} = req.params
+    try{
+        const deletedUser = await user.findOneAndDelete(id)
 
+        res.status(200).json(deletedUser);
+
+    }catch(error){
+        console.log("user not deleted",error)
+        res.status(400).json({massage:"user not deleted"})
+    }
 }
 
