@@ -4,11 +4,15 @@ import mongoServer from "./db.js";
 
 import UserRouter from "./routes/user_routes.js";
 
+import cors from "cors"
+
 mongoServer();
 
 const app = express();
 
 app.use(express.json())
+
+app.use(cors());
 
 const port = process.env.PORT || 8000;
 
